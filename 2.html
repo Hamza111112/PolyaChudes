@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Этот струнный инструмент используют во многих стилях и направлениях музыки. Значительный вклад в музыкальную индустрию этот инструмент внес к середине 20 века.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Г</h1>
+		</div>
+		<div class="letter2">
+			<h1>И</h1>
+		</div>
+		<div class="letter3">
+			<h1>Т</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+		<div class="letter5">
+			<h1>Р</h1>
+		</div>
+		<div class="letter6">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="buka">A</span>
+	<span class="bukb">Б</span>
+	<span class="bukv">В</span>
+	<span class="bukg">Г</span>
+	<span class="bukd">Д</span>		
+	<span class="buke">Е</span>	
+	<span class="bukyo">Ё</span>
+	<span class="bukzh">Ж</span>
+	<span class="bukz">З</span>
+	<span class="buki">И</span>
+	<span class="text2">Й</span>
+	<span class="bukk">К</span>
+	<span class="bukl">Л</span>
+	<span class="bukm">М</span>
+	<span class="text2">Н</span>
+	<span class="text2">О</span>
+	<span class="text2">П</span>
+	<span class="bukr">Р</span>
+	<span class="text2">С</span>
+	<span class="bukt">Т</span>
+	<span class="text2">У</span>
+	<span class="text2">Ф</span>
+	<span class="text2">Х</span>
+	<span class="text2">Ц</span>
+	<span class="text2">Ч</span>
+	<span class="text2">Ш</span>
+	<span class="text2">Щ</span>
+	<span class="text2">Ъ</span>
+	<span class="text2">Ы</span>
+	<span class="text2">Ь</span>
+	<span class="text2">Э</span>
+	<span class="text2">Ю</span>
+	<span class="text2">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+
+		let bA = document.querySelector(".buka")
+		let prav1 = document.querySelector(".letter4")
+		let prav2 = document.querySelector(".letter6")
+		let bG = document.querySelector(".bukg")
+		let prav3 = document.querySelector(".letter1")
+		let bI = document.querySelector(".buki")
+		let prav4 = document.querySelector(".letter2")
+		let bT = document.querySelector(".bukt")
+		let prav5 = document.querySelector(".letter3")
+		let bR = document.querySelector(".bukr")
+		let prav6 = document.querySelector(".letter5")
+		let bB = document.querySelector(".bukb")
+		let bV = document.querySelector(".bukv")
+		let bD = document.querySelector(".bukd")
+		let bE = document.querySelector(".buke")
+		let bYO = document.querySelector(".bukyo")
+		let bZH = document.querySelector(".bukzh")
+		let bZ = document.querySelector(".bukz")
+		let bK = document.querySelector(".bukk")
+		let bL = document.querySelector(".bukl")
+		let bM = document.querySelector(".bukm")
+		
+		bA.onclick = function() {
+			alert("Молодец продолжай!")
+			prav1.style.background = "white"
+			prav2.style.background = "white"
+		}
+		bG.onclick = function() {
+			alert("Молодец продолжай!")
+			prav3.style.background = "white"
+		}
+
+		bI.onclick = function() {
+			alert("Молодец продолжай!")
+			prav4.style.background = "white"
+		}
+
+		bT.onclick = function() {
+			alert("Молодец продолжай!")
+			prav5.style.background = "white"
+		}
+
+		bR.onclick = function() {
+			alert("Молодец продолжай!")
+			prav6.style.background = "white"
+		}
+
+		bB.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bV.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bD.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bE.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bYO.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bZH.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bZ.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bK.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bL.onclick = function() {
+			alert("Неправильно!")
+		}
+
+		bM.onclick = function() {
+			alert("Неправильно!")
+		}
+
+	</script>
+</body>
+</html>
